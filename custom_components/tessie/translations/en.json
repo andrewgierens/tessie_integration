@@ -1,0 +1,223 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "access_token": "Tessie API Key",
+                    "tessie": "Tessie"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery_heater_on": {
+                "name": "Battery Heater On"
+            },
+            "battery_level": {
+                "name": "Battery Level"
+            },
+            "battery_range": {
+                "name": "Battery Range"
+            },
+            "charge_amps": {
+                "name": "Charge Amps"
+            },
+            "charge_current_request": {
+                "name": "Charge Current Request"
+            },
+            "charge_current_request_max": {
+                "name": "Charge Current Request Max"
+            },
+            "charge_enable_request": {
+                "name": "Charge Enable Request"
+            },
+            "charge_energy_added": {
+                "name": "Charge Energy Added"
+            },
+            "charge_limit_soc": {
+                "name": "Charge Limit Soc"
+            },
+            "charge_limit_soc_max": {
+                "name": "Charge Limit Soc Max"
+            },
+            "charge_limit_soc_min": {
+                "name": "Charge Limit Soc Min"
+            },
+            "charge_limit_soc_std": {
+                "name": "Charge Limit Soc Std"
+            },
+            "charge_miles_added_ideal": {
+                "name": "Charge Miles Added Ideal"
+            },
+            "charge_miles_added_rated": {
+                "name": "Charge Miles Added Rated"
+            },
+            "charge_port_cold_weather_mode": {
+                "name": "Charge Port Cold Weather Mode"
+            },
+            "charge_port_color": {
+                "name": "Charge Port Color"
+            },
+            "charge_port_door_open": {
+                "name": "Charge Port Door Open"
+            },
+            "charge_port_latch": {
+                "name": "Charge Port Latch"
+            },
+            "charge_rate": {
+                "name": "Charge Rate"
+            },
+            "charger_actual_current": {
+                "name": "Charger Actual Current"
+            },
+            "charger_phases": {
+                "name": "Charger Phases"
+            },
+            "charger_pilot_current": {
+                "name": "Charger Pilot Current"
+            },
+            "charger_power": {
+                "name": "Charger Power"
+            },
+            "charger_voltage": {
+                "name": "Charger Voltage"
+            },
+            "charging_state": {
+                "name": "Charging State"
+            },
+            "conn_charge_cable": {
+                "name": "Conn Charge Cable"
+            },
+            "display_name": {
+                "name": "Display Name"
+            },
+            "est_battery_range": {
+                "name": "Est Battery Range"
+            },
+            "fast_charger_brand": {
+                "name": "Fast Charger Brand"
+            },
+            "fast_charger_present": {
+                "name": "Fast Charger Present"
+            },
+            "fast_charger_type": {
+                "name": "Fast Charger Type"
+            },
+            "ideal_battery_range": {
+                "name": "Ideal Battery Range"
+            },
+            "max_range_charge_counter": {
+                "name": "Max Range Charge Counter"
+            },
+            "minutes_to_full_charge": {
+                "name": "Minutes To Full Charge"
+            },
+            "not_enough_power_to_heat": {
+                "name": "Not Enough Power To Heat"
+            },
+            "off_peak_charging_enabled": {
+                "name": "Off Peak Charging Enabled"
+            },
+            "off_peak_charging_times": {
+                "name": "Off Peak Charging Times"
+            },
+            "off_peak_hours_end_time": {
+                "name": "Off Peak Hours End Time"
+            },
+            "preconditioning_enabled": {
+                "name": "Preconditioning Enabled"
+            },
+            "preconditioning_times": {
+                "name": "Preconditioning Times"
+            },
+            "scheduled_charging_mode": {
+                "name": "Scheduled Charging Mode"
+            },
+            "scheduled_charging_pending": {
+                "name": "Scheduled Charging Pending"
+            },
+            "scheduled_charging_start_time": {
+                "name": "Scheduled Charging Start Time"
+            },
+            "scheduled_departure_time": {
+                "name": "Scheduled Departure Time"
+            },
+            "scheduled_departure_time_minutes": {
+                "name": "Scheduled Departure Time Minutes"
+            },
+            "supercharger_session_trip_planner": {
+                "name": "Supercharger Session Trip Planner"
+            },
+            "time_to_full_charge": {
+                "name": "Time To Full Charge"
+            },
+            "timestamp": {
+                "name": "Timestamp"
+            },
+            "trip_charging": {
+                "name": "Trip Charging"
+            },
+            "usable_battery_level": {
+                "name": "Usable Battery Level"
+            },
+            "user_charge_enable_request": {
+                "name": "User Charge Enable Request"
+            },
+            "vin": {
+                "name": "VIN"
+            }
+        },
+        "switch": {
+            "charge_port_door_open_switch": {
+                "name": "Charge Port Door"
+            },
+            "charging_state_switch": {
+                "name": "Charging State"
+            },
+            "is_climate_on_switch": {
+                "name": "Climate Control"
+            },
+            "locked_switch": {
+                "name": "Lock State"
+            },
+            "sentry_mode_switch": {
+                "name": "Sentry Mode"
+            },
+            "steering_wheel_heater_switch": {
+                "name": "Steering Wheel Heater"
+            },
+            "valet_mode_switch": {
+                "name": "Valet Mode"
+            }
+        }
+    },
+    "services": {
+        "set_charging_amps": {
+            "description": "Change the current value for the Tesla charging.",
+            "fields": {
+                "amps": {
+                    "description": "The amount of amps to set the Tesla. Select this or the next for providing amps",
+                    "name": "Amps"
+                },
+                "entity_amps": {
+                    "description": "The amount of amps to set the Tesla provided by an entity. NOTE - THIS TAKES PRIORITY OVER THE ABOVE",
+                    "name": "Entity Amps"
+                },
+                "vehicle": {
+                    "description": "The target vehicle",
+                    "name": "Vehicle"
+                }
+            },
+            "name": "Set Charging Amps"
+        }
+    }
+}
