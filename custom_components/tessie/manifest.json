@@ -1,13 +1,17 @@
 {
   "domain": "tessie",
   "name": "Tessie",
-  "codeowners": ["@andrewgierens"],
+  "codeowners": [
+    "@andrewgierens"
+  ],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://www.home-assistant.io/integrations/tessie",
   "homekit": {},
   "iot_class": "cloud_polling",
-  "requirements": ["tessie_api==0.0.1"],
+  "requirements": [
+    "tessie_api==0.0.2"
+  ],
   "ssdp": [],
   "zeroconf": []
 }
