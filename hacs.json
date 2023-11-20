@@ -1,6 +1,3 @@
 {
-  render_readme true,
-  content_in_root false,
-  iot_class Cloud Poll,
-  homeassistant 2021.9.3
+  "name": "Tessie API"
 }
