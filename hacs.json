@@ -1,3 +1,4 @@
 {
-  "name": "Tessie API"
+  "name": "Tessie API",
+  "render_readme": true
 }
