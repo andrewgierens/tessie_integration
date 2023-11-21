@@ -1,15 +1,14 @@
 {
-  "domain": "tessie",
-  "name": "Tessie",
   "codeowners": [
     "@andrewgierens"
   ],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/andrewgierens/tessie_python_api",
-  "issue_tracker": "https://github.com/andrewgierens/tessie_python_api/issues",
-  "homekit": {},
+  "domain": "tessie",
   "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/andrewgierens/tessie_python_api/issues",
+  "name": "Tessie",
   "requirements": [
     "tessie_api==0.0.2"
   ],
