@@ -225,7 +225,7 @@ class TessieSwitchBase(CoordinatorEntity, SwitchEntity, ABC):
     def device_info(self) -> DeviceInfo:
         """Return the device info for the switch."""
         return DeviceInfo(
-            identifiers={(DOMAIN, MANUFACTURER)},
+            identifiers={(DOMAIN, self._name)},
             name=self._name,
             manufacturer=MANUFACTURER,
             model=self._model,
