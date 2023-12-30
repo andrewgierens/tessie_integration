@@ -110,7 +110,7 @@ SENSOR_INFO_TYPES_TESLA: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         translation_key="battery_range",
         key="last_state.charge_state.battery_range",
-        native_unit_of_measurement=UnitOfLength.KILOMETERS,
+        native_unit_of_measurement=UnitOfLength.MILES,
         device_class=SensorDeviceClass.DISTANCE,
     ),
     SensorEntityDescription(
@@ -254,7 +254,7 @@ SENSOR_INFO_TYPES_TESLA: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         translation_key="est_battery_range",
         key="last_state.charge_state.est_battery_range",
-        native_unit_of_measurement=UnitOfLength.KILOMETERS,
+        native_unit_of_measurement=UnitOfLength.MILES,
         device_class=SensorDeviceClass.DISTANCE,
     ),
     SensorEntityDescription(
@@ -278,7 +278,7 @@ SENSOR_INFO_TYPES_TESLA: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         translation_key="ideal_battery_range",
         key="last_state.charge_state.ideal_battery_range",
-        native_unit_of_measurement=UnitOfLength.KILOMETERS,
+        native_unit_of_measurement=UnitOfLength.MILES,
         device_class=SensorDeviceClass.DISTANCE,
     ),
     SensorEntityDescription(
