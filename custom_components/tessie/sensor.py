@@ -230,7 +230,7 @@ SENSOR_INFO_TYPES_TESLA: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
         translation_key="charger_power",
         key="last_state.charge_state.charger_power",
-        native_unit_of_measurement=UnitOfPower.WATT,
+        native_unit_of_measurement=UnitOfPower.KILO_WATT,
         device_class=SensorDeviceClass.POWER,
     ),
     SensorEntityDescription(
