@@ -1,6 +1,6 @@
 """Class to handle service logic."""
 
-from tessie_api import set_charging_amps
+from tessie_api import set_charging_amps, set_temperature
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, ServiceCall, callback
@@ -50,5 +50,22 @@ def async_setup_services(hass: HomeAssistant, entry: ConfigEntry) -> None:
 
         await set_charging_amps(websession, vin, accessToken, amps)
 
+    async def handle_set_climate_temp(call: ServiceCall):
+        deviceId = call.data.get("vehicle")
+        temp = call.data.get("temp")
+
+        if deviceId is None:
+            return
+
+        if temp is None:
+            return
+
+        vin = get_vin_from_device_id(hass, deviceId)
+        accessToken: str = entry.data[ACCESS_TOKEN]
+        websession = async_get_clientsession(hass)
+
+        await set_temperature(websession, vin, accessToken, temp)
+
     # Register services with home assistant
     hass.services.async_register(DOMAIN, "set_charging_amps", handle_set_charging_amps)
+    hass.services.async_register(DOMAIN, "set_climate_temp", handle_set_climate_temp)
