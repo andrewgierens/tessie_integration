@@ -17,3 +17,16 @@ set_charging_amps:
       selector:
         device:
           integration: tessie
+set_climate_temp:
+  fields:
+    temp:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 40
+    vehicle:
+      required: true
+      selector:
+        device:
+          integration: tessie
